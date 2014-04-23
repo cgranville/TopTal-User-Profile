@@ -10,44 +10,12 @@ $(document).foundation();
 
 <script>
 	$(document).ready(function() {
-    //toggle `popup` / `inline` mode
-   $.fn.editable.defaults.mode = 'inline';   
-
     
-    //make username editable
-   $('#name').editable({
-    	highlight: false,
-    	showbuttons: false,
-    	emptytext: "Add name",
-    	emptyclass: "inputEmpty",
-    	unsavedclass: "inputEmpty"
-    });
-    
-  $('#location').editable({
-    	highlight: false,
-    	showbuttons: false,
-    	emptytext: "Add name",
-    	emptyclass: "inputEmpty",
-    	unsavedclass: "inputEmpty"
-    }); 
+$("#name").focus().select();
 
-	$('#languages').editable({
-		highlight: false,
-		showbuttons: false,
-		emptytext: "Add name",
-		emptyclass: "inputEmpty",
-		unsavedclass: "inputEmpty"
-	});         
-	 $('#tags').editable({
-		showbuttons: false,
-		
-	    select2: {
-	        tags: ['html', 'javascript', 'css', 'ajax', 'php', 'ruby', 'actionscript', 'jquery', 'json', 'html5', 'css3', 'sass', 'mysql', 'c++', 'mssql', 'basic', 'asp.net', 'maxscript', 'python', 'perl', 'unity'],
-	        tokenSeparators: [",", " "]
-	    }
-	}); 
-	 /*$("#tags").select2({
-                      tags:["red", "green", "blue"],
-                      tokenSeparators: [",", " "]});*/
+$("#name").onfocus(function() {
+  $(this).html().select();
+})
+
 });
 </script>
