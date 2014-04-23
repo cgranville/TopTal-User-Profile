@@ -1,0 +1,555 @@
+// Make sure the charset is set appropriately
+@charset "UTF-8";
+
+// Global Foundation Settings
+@import "foundation/settings";
+
+// You can import only specific elements by adjusting the import below
+@import "foundation";
+
+//
+// Mixins
+//
+
+
+
+//
+// Global Style Modifiers
+//
+
+.white {
+	background: white;
+	color: black;
+}
+
+.white:hover {
+	background: lightgray;
+	color: black;
+}
+
+.gray {
+	background: gray;
+	color: white;
+}
+
+.gray:hover {
+	background: darkgray;
+	color: white;
+}
+
+.black {
+	background: black;
+	color: white;
+}
+
+.black:hover {
+	background: dimgray;
+	color: white;
+}
+
+.bottom {
+	position:relative;
+	bottom:0;
+}
+
+.center {
+	text-align: center;
+}
+
+.bold {
+	font-weight: 700 !important;
+}
+.semibold, .semi-bold {
+ font-weight: 600 !important;
+}
+.subtitle {
+	font-family: 'Crimson Text', serif;
+	font-style: italic;
+	font-size: .8rem;
+}
+
+.upper {
+	text-transform: uppercase;
+}
+
+//
+// Labels //
+//
+
+.master {
+	background: black;
+}
+
+.expert {
+	background: dimgray;
+}
+
+.advanced {
+	background: darkgray;
+}
+
+.label {
+	margin: 0 .3rem .3rem 0;
+	font-weight: 700;
+	text-transform: uppercase;
+
+}
+
+
+//
+// Buttons //
+//
+
+
+
+//
+// Stripes //
+//
+
+.stripe-white {
+padding: 2.5rem;
+text-align: center;
+}
+
+.stripe-white h3 {
+	color: black;
+}
+
+.stripe-black {
+	background: black;
+	color: white;
+	padding: 2.5rem;
+	text-align: center;
+}
+
+.stripe-black h2, h3 {
+	color: white;
+}
+
+.stripe-black .button {
+	margin:0 5px;
+	top:-3px;
+}
+
+
+//
+// Header //
+//
+
+#header {
+	background: padding-box #000;
+	color: white;
+	padding: 1rem .5rem 0;
+}
+
+#logo {
+	width:98px;
+	height:33px;
+ 	background: url('/assets/img/toptal_logo.png');
+ 	-webkit-background-size: 98px 33px;
+	background-size: 98px 33px;
+	cursor: pointer;
+}
+
+#subtitle {
+	display: inline-block;
+	height: 26px;
+	font-weight: 700;
+	font-style: italic;
+	color: darkgray;
+	padding:.3rem;
+	vertical-align: text-bottom;
+	margin-left:1rem;
+}
+
+#join {
+	display: inline-block;
+	font-size: .7rem;
+}
+
+#header .button {
+	text-transform: uppercase;
+	font-weight: 700 !important;
+	margin-left:.1rem;
+}
+
+#login-btn {
+	margin-left:1rem !important;
+}
+
+#main-menu ul {
+	list-style-type:none;
+	margin:0;
+	padding: .5rem 0 .8rem;
+}
+
+#main-menu ul li {
+	display: inline;
+}
+
+#main-menu ul a {
+	text-decoration: none;
+	padding: .2rem .9rem .2rem 0;
+	color: #fff;
+	font-size: .98rem;
+	-webkit-transition: color 300ms;
+	transition: color 300ms;
+
+}
+
+#main-menu ul a:hover {
+	text-decoration: none;
+	padding: .2rem .9rem .2rem 0;
+	color: lightgray;
+	font-size: .98rem;
+}
+
+#header #contact {
+	padding: .8rem 0;
+	font-size: .98rem;
+}
+
+
+//
+// Profile
+//
+
+#profile {
+	margin-top:2.5rem;
+	background: lightgray;
+}
+
+#profile h1{
+	line-height: 2.2rem;
+	/* padding: 0 0 1.5rem; */
+	margin: 0 0 1.5rem;
+	/* overflow: visible; */
+}
+
+#profile p {
+	margin-bottom: 0;
+	font-size: .9rem;
+	font-weight: 700;
+	line-height: 1rem;
+}
+
+#image{
+	padding:0;
+}
+
+#info {
+	padding:1.8rem 2rem;
+}
+
+
+#skills {
+	margin-top: 1.5rem;
+}
+
+#options {
+	padding:1.8rem 2rem;
+	height:100%
+}
+
+#options .button {
+	font-weight: 700 !important;
+	text-transform: uppercase;
+	margin-bottom: .8rem;
+}
+
+#options .button i {
+	//font-size: 1.5rem;
+	padding-right: 0.4rem;
+	transition: padding 300ms;
+	-webkit-transition: padding 300ms;
+}
+
+#options .button:hover i {
+	padding-right: 0.8rem;
+}
+
+
+
+//
+// Content
+//
+
+h3 {
+	text-align: center;
+}
+
+h5  {
+	text-align: center;
+	margin:0;
+	//padding:1rem 0;
+	line-height: 1.2rem;
+	font-weight: 600;
+}
+
+.module {
+	padding:0;
+	overflow: hidden;
+	height:250px;
+}
+
+.module .content {
+	padding: 0 1.8rem;
+}
+
+.module .module-img {
+	width:250px;
+	height:250px;
+	transition: all 200ms;
+	-webkit-transition: all 200ms;
+	position:absolute;
+	top:0;
+	left:0;
+	filter: grayscale(blue);
+	-webkit-filter: grayscale(blue);
+}
+
+.module .module-img:hover {
+	width:270px;
+	height:270px;
+	//transform-origin: center center;
+	//-webkit-transform-origin: center center;
+	//transform: rotate(4deg);	
+	//-webkit-transform: rotate(4deg);	
+	top: -10px;
+	left:-10px;
+	filter: grayscale(gray);
+	-webkit-filter: grayscale(gray);
+}
+
+.heading {
+	padding: 1rem;
+	text-align: center;
+	min-height: 70px;
+}
+ .module .shared {
+ 	min-height:0 !important;
+}
+.overlay {
+	position:absolute;
+	z-index:49;
+	width:100%;
+}
+
+#avail {
+	text-align: center;
+	font-size: 2rem;
+	font-weight: 600;
+	padding-bottom:1.5rem;
+}
+
+#envir {
+	text-align: center;
+	font-size: .8rem;
+	line-height: 1.2rem;
+
+}
+
+.quote {
+	background: padding-box url("/assets/img/quote.png");
+}
+
+.quote .heading {
+	//min-height: 0;
+}
+
+.quote .content {
+	padding-top:60px;
+	font-family: 'Crimson Text', serif;
+	
+}
+
+.quote .content p {
+	font-style: italic;
+	font-size: 1rem !important;
+	line-height: 1.2rem;
+	margin-bottom:.7rem;
+}
+
+.quote .author {
+	text-align: right;
+	padding-right:2rem;
+	font-size: .7rem;
+	font-weight: 600;
+}
+
+#map {
+
+	height:100%;
+}
+.top {
+	top:0;
+	vertical-align: top;
+	background: padding-box rgba(255,255,255,.75);
+	color: black;
+}
+.bottom {
+	bottom:0;
+	vertical-align: bottom;
+	background: padding-box rgba(0,0,0,.75);
+	color: white;
+}
+
+.bottom h5 {
+	color: white;
+}
+
+.content p {
+	padding-top: 1rem;
+}
+
+
+
+
+//
+// Module borders
+//
+
+.module {
+	border-left: 1px solid #E5E5E5;
+	border-bottom: 1px solid #E5E5E5;
+}
+
+.module:last-child {
+	border-left: 1px solid #E5E5E5;
+	border-right: 1px solid #E5E5E5;
+}
+
+#content-3 .module {
+	border-top: 1px solid #E5E5E5;
+	//border-bottom: none;
+}
+
+#content-4 .module {
+	border: none;
+}
+
+
+
+//
+// Footer
+//
+
+#footer {
+	background: padding-box lightgray;
+	padding: 0 0 20px;
+	margin-top: 20px;
+	color: #222;
+}
+
+#footer a {
+	color:#222;
+}
+
+#footer a:hover {
+	font-weight: 600;
+}
+#widgets {
+	padding: 1.8rem 0;
+}
+
+#footer ul {
+	margin:0;
+	list-style-type: none;
+	line-height: inherit;
+
+}
+#footer li:first-child {
+	line-height:inherit;
+	padding-bottom:7px;
+}
+#footer li {
+	line-height:1.5rem;
+
+}
+#footer ul li {
+	font-weight: 700;
+	font-size: .9rem;
+}
+
+#faq ul {
+	padding-top:1rem;
+}
+
+#faq ul li {
+	font-weight:500;
+}
+
+#contact ul {
+	padding-top:1rem;
+}
+
+#contact ul li {
+	font-weight:500;
+}
+
+#widgets .title {
+	font-size: .9rem;
+	font-weight: 700;
+}
+
+#widgets p {
+	padding-top:1rem;
+	font-size: .9rem;
+}
+#copy {
+	font-size:.7rem;
+}
+
+//
+// Top skills List
+//
+
+#content-4 {
+	-webkit-column-count:4; /* Chrome, Safari, Opera */
+	-moz-column-count:4; /* Firefox */
+	column-count:4;
+	-webkit-column-gap:30px; /* Chrome, Safari, Opera */
+	-moz-column-gap:30px; /* Firefox */
+	column-gap:30px;
+	margin-bottom:2rem;
+}
+
+
+#topskills .letter {
+	display: inline-block;
+	width:20px;
+	margin-bottom:.2rem;
+	text-transform: uppercase;
+	font-weight: 700;
+	font-size: .6rem;
+	color: black;
+}
+
+#topskills .skill {
+	display: inline;
+	padding: 1px;
+	font-size: .75rem;
+		font-weight: 600;
+		transition: background 200ms;
+		-webkit-transition: background 200ms; 
+}
+
+#topskills .skill:hover {
+	background: dimgray;
+	color: white;
+}
+
+//
+// Inline Editing items
+//
+
+
+
+.editable:focus{
+	outline:none;
+}
+
+.editable::selection {
+	color:gray;
+	background:none;
+}

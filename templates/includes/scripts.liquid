@@ -1,0 +1,53 @@
+
+{{ "/assets/js/foundation.js" | asset_url | script_tag }}
+<!--{{ "jquery-editable-poshytip.js" | asset_url | script_tag }}-->
+{{ "topskills.js" | asset_url | script_tag }}
+
+
+<script>
+$(document).foundation();
+</script>
+
+<script>
+	$(document).ready(function() {
+    //toggle `popup` / `inline` mode
+   $.fn.editable.defaults.mode = 'inline';   
+
+    
+    //make username editable
+   $('#name').editable({
+    	highlight: false,
+    	showbuttons: false,
+    	emptytext: "Add name",
+    	emptyclass: "inputEmpty",
+    	unsavedclass: "inputEmpty"
+    });
+    
+  $('#location').editable({
+    	highlight: false,
+    	showbuttons: false,
+    	emptytext: "Add name",
+    	emptyclass: "inputEmpty",
+    	unsavedclass: "inputEmpty"
+    }); 
+
+	$('#languages').editable({
+		highlight: false,
+		showbuttons: false,
+		emptytext: "Add name",
+		emptyclass: "inputEmpty",
+		unsavedclass: "inputEmpty"
+	});         
+	 $('#tags').editable({
+		showbuttons: false,
+		
+	    select2: {
+	        tags: ['html', 'javascript', 'css', 'ajax', 'php', 'ruby', 'actionscript', 'jquery', 'json', 'html5', 'css3', 'sass', 'mysql', 'c++', 'mssql', 'basic', 'asp.net', 'maxscript', 'python', 'perl', 'unity'],
+	        tokenSeparators: [",", " "]
+	    }
+	}); 
+	 /*$("#tags").select2({
+                      tags:["red", "green", "blue"],
+                      tokenSeparators: [",", " "]});*/
+});
+</script>

@@ -1,0 +1,223 @@
+{
+	"fullname": "Enter Name",
+	"meta": {
+		"bgimg":"{{ '250x250' | placeholder:'FF6600','000000' }}",
+		"firstname":"Enter",
+		"lastname":"Name",
+		"location": {
+			"city":"City",
+			"state":"State",
+			"country":"Country"
+		},
+		"languages": [
+		{
+			"lang": "English"
+		},
+		{
+			"lang": "French"
+		},
+		{
+			"lang": "German"
+		}
+		]
+	},
+	"portfolio": {
+		"bgimg":"",
+		"items": [
+			{
+				"item":"NavalPlan",
+				"codelang": [
+					{"code": "PHP"},
+					{"code": "Ruby"}
+				]
+			},
+			{
+				"item":"MyTime",
+				"codelang": [
+					{"code": "PHP"},
+					{"code": "Ruby"}
+				]
+			},
+			{
+				"item":"Formidable",
+				"codelang": [
+					{"code": "PHP"},
+					{"code": "Ruby"}
+				]
+			},
+			{
+				"item":"SparkleShare",
+				"codelang": [
+					{"code": "PHP"},
+					{"code": "Ruby"}
+				]
+			},
+			{
+				"item":"Monsoon",
+				"codelang": [
+					{"code": "PHP"},
+					{"code": "Ruby"}
+				]
+			},
+			{
+				"item":"KrazyCode",
+				"codelang": [
+					{"code": "PHP"},
+					{"code": "Ruby"}
+				]
+			},
+			{
+				"item":"Microsoft Vision",
+				"codelang": [
+					{"code": "PHP"},
+					{"code": "Ruby"}
+				]
+			}
+		]
+	},
+	"experience": {
+		"bgimg":"",
+		"skills": [
+			{
+				"skill": "PHP",
+				"years": "8"
+			},
+			{
+				"skill": "Ruby",
+				"years": "8"
+			},
+			{
+				"skill": "Javascript",
+				"years": "6"
+			},
+			{
+				"skill": "Actionscript",
+				"years": "4"
+			},
+			{
+				"skill": "jQuery",
+				"years": "3"
+			},
+			{
+				"skill": "JSON",
+				"years": "3"
+			},
+			{
+				"skill": "HTML5",
+				"years": "5"
+			},
+			{
+				"skill": "CSS3",
+				"years": "6"
+			},
+			{
+				"skill": "SASS",
+				"years": "3"
+			},
+			{
+				"skill": "MySQL",
+				"years": "7"
+			},
+			{
+				"skill": "C++",
+				"years": "6"
+			},
+			{
+				"skill": "MSSQL",
+				"years": "3"
+			},
+			{
+				"skill": "BASIC",
+				"years": "4"
+			},
+			{
+				"skill": "ASP.NET",
+				"years": "8"
+			},
+			{
+				"skill": "MaxScript",
+				"years": "2"
+			},
+			{
+				"skill": "Python",
+				"years": "6"
+			},
+			{
+				"skill": "Perl",
+				"years": "5"
+			},
+			{
+				"skill": "UNITY",
+				"years": "3"
+			}
+		]
+	},
+	"code": {
+		"bgimg":"/assets/img/code.jpg"
+	},
+	"availability":"Full-time",
+	
+	"environment": {
+		"areas": [
+			{
+				"name":"Git",
+				"type":"platform"
+			},
+			{
+				"name":"GitHub",
+				"type":"platform"
+			},
+			{
+				"name":"Zapier",
+				"type":"platform"
+			},
+			{
+				"name":"Sublime Text 3",
+				"type":"editor"
+			},
+			{
+				"name":"Vim",
+				"type":"editor"
+			},
+			{
+				"name":"OSX",
+				"type":"operating system"
+			},
+			{
+				"name":"Ubuntu Linux",
+				"type":"server"
+			}
+		]
+	},
+	"amazing": {
+		"bgimg": "/assets/img/quote.jpg",
+		"quote": "Loreum ipsum."
+	},
+	"clients": {
+		"bgimg": "/assets/img/quote.jpg",
+		"quote": "Loerum ipsum."
+	},
+	"notes": {
+		"bgimg":"/assets/img/quote.jpg",
+		"quote": "Loerum ipsum.",
+		"name":"Breanden Beneschott",
+		"title":"Senior Technical Recruiter",
+		"company":"Toptal",
+		"uid":"123456"
+	},
+	"hobby": {
+		"bgimg":"/assets/img/kayaking.jpg",
+		"quote":"I love kayaking on the weekend. It's a great time!"
+	},
+	"education": {
+		"bgimg": "/assets/img/princeton.jpg",
+		"school": "Princeton University",
+		"graduated":"2004",
+		"degree":"Masters",
+		"subject":"Human Factors, Graphic Design"
+	},
+	"location": {
+		"bgimg": "/assets/img/portland.jpg"
+	}
+	
+}

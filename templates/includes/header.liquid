@@ -1,0 +1,10 @@
+<section id="header" data-magellan-expedition="fixed">
+	<div class="row">
+			<div id="logo" onclick="window.location = '/index';" class="left"></div><div id="subtitle">Exclusive access to top developers</div>
+			<div id="join" class="right">Join toptal as&nbsp; <a href="#" class="button tiny radius white">Developer</a> <a href="#" class="button tiny radius white">Company</a> <a href="#" id="login-btn" class="button tiny radius gray">Login</a></div>
+	</div>
+	<div class="row">
+		<nav id="main-menu" class="left">{{ mixture.sitemap | navigation: mixture.url, 'ul', 'li', 'selected', 'Home' | downcase}}</nav>
+		<div id="contact" class="right">Call us: 888.323.4422</div>
+	</div>
+</section>

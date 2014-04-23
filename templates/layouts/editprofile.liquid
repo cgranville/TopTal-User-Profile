@@ -1,0 +1,148 @@
+<!doctype html>
+<html class="no-js" lang="en">
+<head>
+	{% include "head" %}
+</head>
+<body>
+	{% include "header" %}
+	<section id="profile" class="row">
+		<div id="image" class="large-3 columns">{{ "250" | placeholder | image_tag }}</div>
+		<div id ="info" class="large-6 columns">
+			<h1 id="name" class="editable" contenteditable="true" data-title="Enter username">{{ model.meta.firstname }} {{ model.meta.lastname }}</h1>
+			<p id="location" data-type="text" data-placement="right" data-title="Enter username">{{ model.meta.firstname }} {{ model.meta.lastname }}</p>
+			<p id="languages" data-type="text" data-placement="right" data-title="Enter username">{% for lang in model.meta.languages %}{{ lang.lang }} {% unless forloop.last %}, {% endunless %}{% endfor %}</p>
+			
+			<div id="skills">
+				
+				{% for label in model.experience.skills %}<span class="label radius {% if label.years >= 8 %}master{% elseif label.years >= 5 %}expert{% else %}advanced{% endif %}">{{label.skill}}</span>{% endfor %}
+			</div>
+		</div>
+		<div id="options" class="large-3 columns">
+			<div><a href="#" class="button tiny black round expand">Hire This Developer</a></div>
+			<div><a href="#" class="button tiny black round expand"><i class="fi-download"></i> Download Resume</a></div>
+			<div><p id="tags" data-type="select2" data-placement="right" data-title="Enter tags">html, javascript</p></div>
+			<!--<div><p id="tags" >html, javascript</p></div>	-->
+		</div>
+	</section>
+
+	<section id="content-1" class="row">
+		<div class="large-3 columns module">
+			<div class="heading">
+				<h5>Portfolio</h5>
+				<span class="subtitle center">{{ model.portfolio.items.size }} Projects</span>
+			</div>
+			<div class="content">
+				<ul>
+					{% for folio in model.portfolio.items limit:5 %} <li><span class="bold">{{ folio.item }}</span>, {% for techused in folio.codelang %} {{ techused.code }}{% unless forloop.last %}, {% endunless %} {% endfor %} </li>{% endfor %}
+				</ul>
+				{% if model.portfolio.items.size > 5 %}<a href="#" class="button tiny radius expand black upper">{{model.portfolio.items.size | minus:5}} more &nbsp;<i class="fi-play"></i></a>{% endif %}
+			</div>
+		</div>
+		<div class="large-3 columns module">
+			<div class="heading">
+				<h5>Experience</h5>
+				<span class="subtitle center">{{model.experience.skills.size}} skills</span>
+				
+			</div>
+			<div class="content">
+				<ul>
+					{% for skills in model.experience.skills limit:5 %} <li><span class="bold">{{ skills.skill }}</span>, {{ skills.years}} years</li>{% endfor %}
+				</ul>
+				{% if model.experience.skills.size > 5 %}<a href="#" class="button tiny radius expand black upper">{{model.experience.skills.size | minus:5}} more &nbsp;<i class="fi-play"></i></a>{% endif %}
+			</div>
+		</div>
+		<div class="large-3 columns module">
+			<div class="module-img"><img src="{{ model.code.bgimg }}"></div>
+			<div class="heading overlay top">
+				<h5>Sample Code and Algorithms</h5>
+			</div>
+		</div>
+		<div class="large-3 columns module">
+			<div class="heading shared">
+				<h5>Availability</h5>
+
+			</div>
+			<div id="avail" class="content" style="border-bottom:1px solid #E5E5E5">{{ model.availability }}</div>
+			<div class="heading shared">
+				<h5>Preferred Environment</h5>
+
+			</div>
+			
+			<div id="envir" class="content">{% for envir in model.environment.areas %}<span class="semibold">{{envir.name}}</span>{% unless forloop.last %}, {% endunless %} {% endfor %}</div>
+		</div>
+	</section>
+
+	<section id="content-2" class="row">
+		<div class="large-3 columns quote module">
+			<div class="content"><p>... {{ 1 | lorem_ipsum | truncate:150 }}</p></div>
+			<div class="author">- {{ model.meta.firstname }}</div>
+			<div class="heading overlay top">
+				<h5>The most amazing...</h5>
+			</div>
+		</div>
+		<div class="large-3 columns quote module">
+			<div class="content"><p>... {{ 1 | lorem_ipsum | truncate:150 }}</p></div>
+			<div class="author">- {{ model.meta.firstname }}</div>
+			<div class="heading overlay top">
+				<h5>In clients I look for...</h5>
+			</div>
+		</div>
+		<div class="large-3 columns module">
+			<div id="map"></div>
+			<div class="content overlay bottom">
+				<p class="center">{{ model.meta.firstname}} lives in <br><a href="#">{{ model.meta.location.city }}, {{ model.meta.location.state }}, {{ model.meta.location.country }}</a></p>
+			</div>
+		</div>
+		<div class="large-3 columns quote module">
+			<div class="content"><p>... {{ 1 | lorem_ipsum | truncate:150 }}</p></div>
+			<div class="author">- {{ model.notes.name }}, {{ model.notes.company }}</div>
+			<div class="heading overlay top">
+				<h5>Note</h5>
+			</div>
+		</div>
+	</section>
+
+	<section class="row stripe-white">
+		<h2>Let me introduce myself...</h2>
+	</section>
+
+	<section id="content-3" class="row">
+		<div class="large-3 columns module">
+			<div class="module-img"><img src="{{ model.hobby.bgimg }}"></div>
+			<div class="content overlay bottom">
+				<p class="center">{{ model.hobby.quote }}</p>
+			</div>
+		</div>
+		<div class="large-3 columns module">
+			<div class="module-img"><img src="{{ model.education.bgimg }}"></div>
+			<div class="content overlay bottom">
+				<p class="center">{{ model.education.school }}, {{ model.education.graduated }}<br>{{ model.education.subject }}</p>
+			</div>
+		</div>
+		<div class="large-3 columns quote module">
+			<div class="content"><p>... {{ 1 | lorem_ipsum | truncate:150 }}</p></div>
+			<div class="author">- {{ model.meta.firstname }}</div>
+			<div class="heading overlay top">
+				<h5>The most amazing...</h5>
+			</div>
+		</div>
+		<div class="large-3 columns module">
+			<div class="module-img"><img src="{{ model.location.bgimg }}"></div>
+			<div class="content overlay bottom">
+				<p class="center">{{ model.meta.firstname}} lives in <br><a href="#">{{ model.meta.location.city }}, {{ model.meta.location.state }}, {{ model.meta.location.country }}</a></p>
+			</div>
+		</div>
+	</section>
+	<section class="row stripe-black center"><h3>To hire Martin as a <a href="#" class="button small white round upper bold">Client</a></h2></section>
+	<section class="row stripe-white center"><h2>Top skills on toptal</h2></section>
+	<section id="content-4" class="row">
+		<div id="topskills">
+
+			<!--{% for skills in global.topskills %}<li><a href="#">{{skills.skill | truncate:23}}</a></li>{% endfor %}-->
+
+		</div>
+	</section>
+	{% include "footer" %}
+	{% include "scripts" %}
+</body>
+</html>

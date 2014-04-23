@@ -1,0 +1,473 @@
+{
+	"version": "5.2",
+	"topskils":{ 
+			".": [
+				{
+					"skill": ".NET Programmers"
+				}
+			],
+			"#": [
+				{
+					"skill": "3DS Max Engineers"
+				}
+			],
+			"a": [
+				{
+				"skill":"Administrative Assistants"
+				},
+				{
+					"skill":"Advertising Consultants"
+				},
+				{
+					"skill":"AJAX Programmers"
+				},
+				
+				{
+					"skill":"Amazon Web Services Engineers"
+				},
+				{
+					"skill":"Android Programmers"
+				},
+				{
+					"skill":"Animators"
+				},
+				{
+					"skill":"Article Writers"
+				},
+				{
+					"skill":"ASP Programmers"
+				},
+				{
+					"skill":"ASP.NET Programmers"
+				}
+			],
+			"b": [
+				{
+					"skill":"Blog Writers"
+				},
+				{
+					"skill":"Business Writers"
+				}
+			],
+			"c": [
+				{
+					"skill":"C Programmers"
+				},
+				{
+					"skill":"Cocoa Programmers"
+				},
+				{
+					"skill":"Content Writers"
+				},
+				{
+					"skill":"Copyright Attorneys"
+				},
+				{
+					"skill":"Creative Writers"
+				},
+				{
+					"skill":"CSS Programmers"
+				},
+				{
+					"skill":"Customer Service Representatives"
+				}
+			],
+			"d": [
+				{
+					"skill":"Data Entry Experts"
+				},
+				{
+					"skill":"DHTML Programmers"
+				},
+				{
+					"skill":"Dot Net Nuke Programmers"
+				},
+				{
+					"skill":"Drupal Programmers"
+				}
+			],
+			"e": [
+				{
+					"skill": ".NET Programmers"
+				}
+			],
+			"f": [
+				{
+					"skill":"Flash Developers"
+				},
+				{
+					"skill":"Foursquare Programmers"
+				},
+				{
+					"skill":"French Translators"
+				}
+			],
+			"g": [
+				{
+					"skill":"Google App Engineers"
+				},
+				{
+					"skill":"Graphic Designers"
+				}
+			],
+			"h": [
+				{
+					"skill":"HTML Programmers"
+				},
+				{
+					"skill":"HTML5 Programmers"
+				}
+			],
+			"i": [
+				{
+					"skill":"Illustrator Designers"
+				},
+				{
+					"skill":"InDesign Designers"
+				},
+				{
+					"skill":"iPhone Programmers"
+				}
+			],
+			"j": [
+				{
+					"skill":"JavaScript Programmers"
+				},
+				{
+					"skill":"Joomla Programmers"
+				}
+			],
+			"k": [
+				{
+					"skill": ".NET Programmers"
+				}
+			],
+			"l": [
+				{
+					"skill":"LAMP Programmers"
+				},
+				{
+					"skill":"Linux Programmers"
+				},
+				{
+					"skill":"Logo Designers"
+				}
+			],
+			"m": [
+				{
+					"skill":"Mac OS Programmers"
+				},
+				{
+					"skill":"Magento Programmers"
+				},
+				{
+					"skill":"Microsoft Excel Experts"
+				},
+				{
+					"skill":"Microsoft Sharepoint Administrators"
+				},
+				{
+					"skill":"Mobile Programmers"
+				},
+				{
+					"skill":"MySQL Programmers"
+				}
+			],
+			"n": [
+				{
+					"skill":"Newsletter Writers"
+				}
+			],
+			"o": [
+				{
+					"skill":"Office Administrators"
+				},
+				{
+					"skill":"Online Writers"
+				},
+				{
+					"skill":"Oracle Programmers"
+				},
+				{
+					"skill":"osCommerce Programmers"
+				}
+			],
+			"p": [
+				{
+					"skill":"Palm Programmers"
+				},
+				{
+					"skill":"PayPal Programmers"
+				},
+				{
+					"skill":"Photoshop Designers"
+				},
+				{
+					"skill":"PHP Programmers"
+				}
+			],
+			"q": [
+				{
+					"skill": ".NET Programmers"
+				}
+			],
+			"r": [
+				{
+					"skill":"Ruby on Rails Programmers"
+				}
+			],
+			"s": [
+				{
+					"skill":"Salesforce.com Programmers"
+				},
+				{
+					"skill":"SAP Programmers"
+				},
+				{
+					"skill":"SEM Consultants"
+				},
+				{
+					"skill":"SEO Consultants"
+				},
+				{
+					"skill":"Software Testing Programmers"
+				},
+				{
+					"skill":"Spanish Translators"
+				},
+				{
+					"skill":"SQL Programmers"
+				}
+			],
+			"t": [
+				{
+					"skill":"Transcriptionists"
+				}
+			],
+			"u": [
+				{
+					"skill": ".NET Programmers"
+				}
+			],
+			"v": [
+				{
+					"skill": ".NET Programmers"
+				}
+			],
+			"w": [
+				{
+					"skill": ".NET Programmers"
+				}
+			],
+			"x": [
+				{
+					"skill": ".NET Programmers"
+				}
+			],
+			"y": [
+				{
+					"skill": ".NET Programmers"
+				}
+			],
+			"z": [
+				{
+					"skill": ".NET Programmers"
+				}
+			]
+		},
+	"topskills2":[
+		{
+			"skill":".NET Programmers"
+		},
+		{
+			"skill":"3DS MAX Engineers"
+		},
+		{
+			"skill":"Administrative Assistants"
+		},
+		{
+			"skill":"Advertising Consultants"
+		},
+		{
+			"skill":"AJAX Programmers"
+		},
+		{
+			"skill":"Amazon Web Services Engineers"
+		},
+		{
+			"skill":"Android Programmers"
+		},
+		{
+			"skill":"Animators"
+		},
+		{
+			"skill":"Article Writers"
+		},
+		{
+			"skill":"ASP Programmers"
+		},
+		{
+			"skill":"ASP.NET Programmers"
+		},
+		{
+			"skill":"Blog Writers"
+		},
+		{
+			"skill":"Business Writers"
+		},
+		{
+			"skill":"C Programmers"
+		},
+		{
+			"skill":"Cocoa Programmers"
+		},
+		{
+			"skill":"Content Writers"
+		},
+		{
+			"skill":"Copyright Attorneys"
+		},
+		{
+			"skill":"Creative Writers"
+		},
+		{
+			"skill":"CSS Programmers"
+		},
+		{
+			"skill":"Customer Service Representatives"
+		},
+		{
+			"skill":"Data Entry Experts"
+		},
+		{
+			"skill":"DHTML Programmers"
+		},
+		{
+			"skill":"French Translators"
+		},
+		{
+			"skill":"Google App Engineers"
+		},
+		{
+			"skill":"Graphic Designers"
+		},
+		{
+			"skill":"HTML Programmers"
+		},
+		{
+			"skill":"HTML5 Programmers"
+		},
+		{
+			"skill":"Illustrator Designers"
+		},
+		{
+			"skill":"InDesign Designers"
+		},
+		{
+			"skill":"iPhone Programmers"
+		},
+		{
+			"skill":"Java Programmers"
+		},
+		{
+			"skill":"JavaScript Programmers"
+		},
+		{
+			"skill":"Joomla Programmers"
+		},
+		{
+			"skill":"LAMP Programmers"
+		},
+		{
+			"skill":"Linux Programmers"
+		},
+		{
+			"skill":"Logo Designers"
+		},
+		{
+			"skill":"Mac OS Programmers"
+		},
+		{
+			"skill":"Magento Programmers"
+		},
+		{
+			"skill":"Microsoft Excel Experts"
+		},
+		{
+			"skill":"Microsoft Sharepoint Administrators"
+		},
+		{
+			"skill":"Mobile Programmers"
+		},
+		{
+			"skill":"MySQL Programmers"
+		},
+		{
+			"skill":"Newsletter Writers"
+		},
+		{
+			"skill":"Office Administrators"
+		},
+		{
+			"skill":"Online Writers"
+		},
+		{
+			"skill":"Oracle Programmers"
+		},
+		{
+			"skill":"osCommerce Programmers"
+		},
+		{
+			"skill":"Palm Programmers"
+		},
+		{
+			"skill":"PayPal Programmers"
+		},
+		{
+			"skill":"Photoshop Designers"
+		},
+		{
+			"skill":"PHP Programmers"
+		},
+		{
+			"skill":"Ruby on Rails Programmers"
+		},
+		{
+			"skill":"Salesforce.com Programmers"
+		},
+		{
+			"skill":"SAP Programmers"
+		},
+		{
+			"skill":"SEM Consultants"
+		},
+		{
+			"skill":"SEO Consultants"
+		},
+		{
+			"skill":"Software Testing Programmers"
+		},
+		{
+			"skill":"Spanish Translators"
+		},
+		{
+			"skill":"SQL Programmers"
+		},
+		{
+			"skill":"Transcriptionists"
+		},
+		{
+			"skill":"Dot Net Nuke Programmers"
+		},
+		{
+			"skill":"Drupal Programmers"
+		},
+		{
+			"skill":"Flash Developers"
+		},
+		{
+			"skill":"Foursquare Programmers"
+		}
+	]
+}
+

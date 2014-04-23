@@ -1,0 +1,27 @@
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Exclusive Access to Top Developers | Toptal</title>
+{{ "http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800" | stylesheet_tag }}
+{{ "http://fonts.googleapis.com/css?family=Crimson+Text:400italic" | stylesheet_tag }}
+{{ "app.css" | asset_url | stylesheet_tag }}
+{{ "foundation-icons.css" | asset_url | stylesheet_tag }}
+{{ "jquery.js" | asset_url | script_tag }}
+{{ "modernizr.js" | asset_url | script_tag }}
+{{ "https://maps.googleapis.com/maps/api/js?key=AIzaSyCOEuN38evUIDyE7xRiwMEjRNE12Gm6qbo&sensor=false" | script_tag }}
+{{ "select2.css" | asset_url | stylesheet_tag }}
+{{ "select2.js" | asset_url | script_tag }}
+<!--{{ "jquery-editable.css" | asset_url | stylesheet_tag }}-->
+<!-- <link href="//cdnjs.cloudflare.com/ajax/libs/x-editable/1.5.0/jquery-editable/css/jquery-editable.css" rel="stylesheet"/>
+<script src="//cdnjs.cloudflare.com/ajax/libs/x-editable/1.5.0/jquery-editable/js/jquery-editable-poshytip.min.js"></script> -->
+
+<script type="text/javascript">
+      function initialize() {
+        var mapOptions = {
+          center: new google.maps.LatLng(45.523307, -122.677143),
+          zoom: 8
+        };
+        var map = new google.maps.Map(document.getElementById("map"),
+            mapOptions);
+      }
+      google.maps.event.addDomListener(window, 'load', initialize);
+    </script>
