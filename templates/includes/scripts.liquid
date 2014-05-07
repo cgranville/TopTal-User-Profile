@@ -1,21 +1,9 @@
 
 {{ "/assets/js/foundation.js" | asset_url | script_tag }}
+{{ "inline.js" | asset_url | script_tag }}
 <!--{{ "jquery-editable-poshytip.js" | asset_url | script_tag }}-->
 {{ "topskills.js" | asset_url | script_tag }}
 
-
 <script>
-$(document).foundation();
-</script>
-
-<script>
-	$(document).ready(function() {
-    
-$("#name").focus().select();
-
-$("#name").onfocus(function() {
-  $(this).html().select();
-})
-
-});
+  $(document).foundation();
 </script>

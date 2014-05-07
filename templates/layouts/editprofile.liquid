@@ -8,13 +8,13 @@
 	<section id="profile" class="row">
 		<div id="image" class="large-3 columns">{{ "250" | placeholder | image_tag }}</div>
 		<div id ="info" class="large-6 columns">
-			<h1 id="name" class="editable" contenteditable="true" data-title="Enter username">Add Name</h1>
-			<p id="location" class="editable" contenteditable="true" data-title="Enter username">Add Location</p>
-			<p id="languages" class="editable" contenteditable="true" data-title="Enter username">Add Language</p>
+			<h1 id="name" class="editable" contenteditable="true" placeholder="Add Name" tabindex="1">Add Name</h1>
+			<p id="location" class="editable" contenteditable="true" data-title="Add Location" tabindex="2">Add Location</p>
+			<p id="languages"><span class="editable language add" contenteditable="true" data-title="Enter username" tabindex="3">Add Language</span></p>
 			
 			<div id="skills">
-				
-				{% for label in model.experience.skills %}<span class="label radius {% if label.years >= 8 %}master{% elseif label.years >= 5 %}expert{% else %}advanced{% endif %}">{{label.skill}}</span>{% endfor %}
+				{% comment %}{% for label in model.experience.skills %}<span class="label radius {% if label.years >= 8 %}master{% elseif label.years >= 5 %}expert{% else %}advanced{% endif %}">{{label.skill}}</span>{% endfor %}{% endcomment %}
+				<span id="addSkills" class="addSkill label radius master"><span class="editable skillLabel" contenteditable="true" data-title="Add Location">Add Skill</span><i class="fi-plus"></i><select><option value="beginner">Beginner</option><option value="intermediate">Intermediate</option><option value="advanced">Advanced</option><option value="expert">Expert</option></select></span>
 			</div>
 		</div>
 		<div id="options" class="large-3 columns">
@@ -89,8 +89,8 @@
 		</div>
 		<div class="large-3 columns module">
 			<div id="map"></div>
-			<div class="content overlay bottom">
-				<p class="center">{{ model.meta.firstname}} lives in <br><a href="#">{{ model.meta.location.city }}, {{ model.meta.location.state }}, {{ model.meta.location.country }}</a></p>
+			<div class="content overlay bottom mapInfo">
+				<p class="center"><span class="firstName"></span> lives in <br><a id="mapLocation" href="#" target="_blank"></a></p>
 			</div>
 		</div>
 		<div class="large-3 columns quote module">
@@ -128,8 +128,8 @@
 		</div>
 		<div class="large-3 columns module">
 			<div class="module-img"><img src="{{ model.location.bgimg }}"></div>
-			<div class="content overlay bottom">
-				<p class="center">{{ model.meta.firstname}} lives in <br><a href="#">{{ model.meta.location.city }}, {{ model.meta.location.state }}, {{ model.meta.location.country }}</a></p>
+			<div id="mapInfo" class="content overlay bottom">
+				<p class="center"><span class="firstName"></span> lives in <br><a id="mapLocation2" href="#" target="_blank"></a></p>
 			</div>
 		</div>
 	</section>

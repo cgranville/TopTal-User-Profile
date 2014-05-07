@@ -92,7 +92,7 @@
 	margin: 0 .3rem .3rem 0;
 	font-weight: 700;
 	text-transform: uppercase;
-
+	//padding:0;
 }
 
 
@@ -381,6 +381,9 @@ h5  {
 
 	height:100%;
 }
+.mapInfo {
+	height:0px;
+}
 .top {
 	top:0;
 	vertical-align: top;
@@ -543,7 +546,9 @@ h5  {
 // Inline Editing items
 //
 
-
+.editable {
+	cursor: pointer;
+}
 
 .editable:focus{
 	outline:none;
@@ -552,4 +557,47 @@ h5  {
 .editable::selection {
 	color:gray;
 	background:none;
+}
+
+.addSkill {
+	padding:.15rem .35rem;
+	display: inline;
+}
+.addSkill select {
+height:14px !important;
+margin-left:.35rem;
+padding:0;
+width: auto;
+background-color: lightgray;
+color:dimgray;
+border:none;
+//display:none;
+font-size: .7rem;
+}
+
+.addSkill .fi-plus {
+	padding: .25rem 0 .25rem 5px;
+}
+
+.addSkill .skillLabel {
+	margin: 0;
+	padding:0;
+}
+
+.language {
+	display: inline-block;
+	padding: 0 5px 0 0;
+	overflow: visible;
+	width: auto;
+}
+
+.add {
+	color: green;
+}
+.saved {
+	color: dimgray;
+}
+
+.language:last-child {
+	color:blue !important;
 }
