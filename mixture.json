@@ -1,7 +1,9 @@
 {
     "debug": true,
     "lintScripts": false,
-    "preprocessorLocations": "assets",
+    "preprocessorLocations": [
+        "assets"
+    ],
     "preprocessorScriptOutput": "assets/js",
     "preprocessorStyleOutput": "assets/css",
     "projectName": "project-charles-granville",
@@ -18,8 +20,6 @@
     "simpleModeFileTypes": null,
     "modelSource": null,
     "domain": null,
-    "convertHtmlOutput": null,
-    "convertHtmlExtension": ".html",
     "followLeader": true,
     "routes": null,
     "customRuby": false,
@@ -27,9 +27,10 @@
     "remoteDebugPort": 0,
     "optimiseImages": true,
     "password": null,
-    "ignoreDir": "ignore",
+    "ignoreDir": [
+        "ignore"
+    ],
     "customTodos": null,
-    "ftpSettings": null,
     "autoPrefixer": null,
     "sass": {
         "outputStyle": null,
@@ -40,7 +41,11 @@
         "useLibSass": true
     },
     "sitemap": false,
-    "gitHubPages": null,
     "less": null,
-    "optimiseSVG": true
+    "optimiseSVG": true,
+    "convertHtml": {
+        "extension": ".html",
+        "path": null,
+        "relativePaths": false
+    }
 }
